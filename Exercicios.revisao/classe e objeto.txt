@@ -1,0 +1,30 @@
+﻿1. Explique com suas palavras o que são classe e objeto em Programação Orientada a Objetos (POO) no PHP. Dê um exemplo simples com nome de uma classe e um objeto correspondente.
+
+
+CLASSE:Classe: Uma classe é um molde que define como um objeto deve ser, especificando suas propriedades (características) e métodos (ações). Ela permite criar vários objetos com a mesma estrutura, mas com dados diferentes.
+Exemplo de classe em PHP:
+<?php
+class Produto
+{
+        // atributos ou propriedades
+        public $codigo;
+        public $nome;
+        public $preco;
+
+        // métodos ou comportamentos
+        public function calculaDezPorcento( )
+        {
+                return $this->preco * 0.10;
+        }
+}
+?>
+
+
+OBJETO: Após definir uma classe, podemos criar múltiplos objetos dela. Cada objeto tem a mesma estrutura, mas com dados diferentes. A criação de um objeto é chamada de instanciação, feita com o operador new.
+Exemplo de objetos:
+<?php
+$produto = new Produto();
+$produto2 = new Produto();
+$produto3 = new Produto();
+?>
+O PHP cria novos objetos da classe Produto e reserva memória para armazená-los.
