@@ -1,0 +1,78 @@
+Atividade 1 – Conceitos
+
+ Explique com suas palavras:
+ 
+1. O que é uma classe abstrata?
+
+É uma classe que serve apenas como modelo para outras classes.
+Ela não pode ser instanciada diretamente, ou seja, não é possível criar objetos a partir dela.
+Seu objetivo é definir atributos e métodos comuns para que as subclasses herdam e implementem comportamentos específicos.
+
+ 2. Qual é a diferença entre uma classe abstrata e uma classe final?
+
+Classe abstrata: não pode ser instanciada, mas pode ser herdada.
+Classe final: pode ser instanciada, mas não pode ser herdada.
+ Ou seja, a abstrata é usada como modelo; a final é usada para impedir herança.
+
+
+Atividade 2 – Interpretação de Código
+
+ Explique o que ocorre ao executar:
+ 
+$p = new Pessoa(); 
+
+Isso gera erro, pois a classe Pessoa é abstrata.
+Classes abstratas não podem gerar objetos diretamente, só podem ser herdadas
+
+E por que o comando abaixo funciona normalmente:
+
+ $v = new Visitante();
+
+Funciona normalmente porque Visitante não é abstrata.
+Ela é uma subclasse concreta que pode ser instanciada e utilizada.
+
+
+Atividade 3 – Identificação Hierárquica
+
+ Na estrutura a seguir:
+
+Pessoa
+ ├── Aluno
+ │     ├── Bolsista
+ │     └── Técnico
+ └── Professor
+
+
+ Responda:
+a) Quem é a superclasse de Aluno? 
+Pessoa
+
+b) Quem é a subclasse de Aluno?
+Bolsista e Técnico
+
+c) Quem é ancestral de Bolsista?
+Pessoa
+
+
+Atividade 4 – Complete o Quadro
+
+
+Situação
+Tipo correto
+
+Serve apenas como modelo base
+Classe Abstrata
+
+Não pode ser herdada
+Classe Final
+
+Não pode ser instanciada
+Classe Abstrata
+
+Método que deve ser implementado nas filhas
+Método Abstrato
+
+Método que não pode ser sobrescrito
+Método Final
+
+
