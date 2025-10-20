@@ -8,13 +8,13 @@ abstract class Veiculo {
 
 class Carro extends Veiculo {
     public function mover() {
-        echo "O carro está se movendo pelas ruas.<br>";
+        echo "O carro está andando pela estrada.<br>";
     }
 }
 
 class Bicicleta extends Veiculo {
     public function mover() {
-        echo "A bicicleta está pedalando pela ciclovia.<br>";
+        echo "A bicicleta está pedalando pelo campo.<br>";
     }
 }
 
@@ -24,3 +24,4 @@ $carro->mover();
 $bicicleta = new Bicicleta();
 $bicicleta->mover();
 ?>
+
